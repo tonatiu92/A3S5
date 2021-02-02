@@ -1,4 +1,0 @@
-14 Osorio Thomas 45 Boulevard de Montmorency 25/01/2021 17:57:37
-11 Durand Alexandre 35 rue des Sablons 75001 Paris 25/01/2021 17:57:02
-12 Dupond Marcel 35 rue des Fleurons 75002 Paris 25/01/2021 17:57:02
-13 Ferrand Sylvie 21 impasse des Marronniers 75002 Paris 25/01/2021 17:57:02
