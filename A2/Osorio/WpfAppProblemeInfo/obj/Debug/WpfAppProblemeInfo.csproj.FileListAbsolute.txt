@@ -1,0 +1,74 @@
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.exe.config
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.exe
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.pdb
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.csprojAssemblyReference.cache
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\MainWindow.g.cs
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\App.g.cs
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo_MarkupCompile.cache
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo_MarkupCompile.lref
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\MainWindow.baml
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.g.resources
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.Properties.Resources.resources
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.csproj.GenerateResource.cache
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.csproj.CoreCompileInputs.cache
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.exe
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.pdb
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\QrCodeWPF.g.cs
+C:\Users\larbe\source\repos\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\QrCodeWPF.baml
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.exe.config
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.exe
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.pdb
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.csprojAssemblyReference.cache
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\MainWindow.g.cs
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\QrCodeWPF.g.cs
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\App.g.cs
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo_MarkupCompile.cache
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo_MarkupCompile.lref
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\MainWindow.baml
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\QrCodeWPF.baml
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.g.resources
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.Properties.Resources.resources
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.csproj.GenerateResource.cache
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.exe
+C:\Users\thoma\Desktop\WpfAppProblemeInfo\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.pdb
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.exe.config
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.exe
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.pdb
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.csprojAssemblyReference.cache
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\MainWindow.g.cs
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\QrCodeWPF.g.cs
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\App.g.cs
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo_MarkupCompile.cache
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo_MarkupCompile.lref
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\MainWindow.baml
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\QrCodeWPF.baml
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.g.resources
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.Properties.Resources.resources
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.csproj.GenerateResource.cache
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.exe
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.pdb
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\Innovation.g.cs
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\obj\Debug\Innovation.baml
+C:\Users\thoma\Desktop\WpfAppProblemeInfo Thomas Osorio TDH\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.xml
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.exe.config
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.xml
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.exe
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\bin\Debug\WpfAppProblemeInfo.pdb
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.csprojAssemblyReference.cache
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\Innovation.g.cs
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\MainWindow.g.cs
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\QrCodeWPF.g.cs
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\App.g.cs
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo_MarkupCompile.cache
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo_MarkupCompile.lref
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\Innovation.baml
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\MainWindow.baml
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\QrCodeWPF.baml
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.g.resources
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.Properties.Resources.resources
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.csproj.GenerateResource.cache
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.csproj.CoreCompileInputs.cache
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.exe
+C:\Users\thoma\Desktop\Osorio\WpfAppProblemeInfo\obj\Debug\WpfAppProblemeInfo.pdb

@@ -1,0 +1,481 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WpfAppProblemeInfo</name>
+    </assembly>
+    <members>
+        <member name="T:WpfAppProblemeInfo.GenericGF">
+            <summary>
+              <p>This class contains utility methods for performing mathematical operations over
+            the Galois Fields. Operations use a given primitive polynomial in calculations.</p>
+              <p>Throughout this package, elements of the GF are represented as an {@code int}
+            for convenience and speed (but at the cost of memory).
+              </p>
+            </summary>
+            <author>Sean Owen</author>
+        </member>
+        <member name="M:WpfAppProblemeInfo.GenericGF.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Create a representation of GF(size) using the given primitive polynomial.
+            </summary>
+            <param name="primitive">irreducible polynomial whose coefficients are represented by
+            *  the bits of an int, where the least-significant bit represents the constant
+            *  coefficient</param>
+            <param name="size">the size of the field</param>
+            <param name="genBase">the factor b in the generator polynomial can be 0- or 1-based
+            *  (g(x) = (x+a^b)(x+a^(b+1))...(x+a^(b+2t-1))).
+            *  In most cases it should be 1, but for QR code it is 0.</param>
+        </member>
+        <member name="M:WpfAppProblemeInfo.GenericGF.BuildMonomial(System.Int32,System.Int32)">
+            <summary>
+            Builds the monomial.
+            </summary>
+            <param name="degree">The degree.</param>
+            <param name="coefficient">The coefficient.</param>
+            <returns>the monomial representing coefficient * x^degree</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.GenericGF.AddOrSubtract(System.Int32,System.Int32)">
+            <summary>
+            Implements both addition and subtraction -- they are the same in GF(size).
+            </summary>
+            <returns>sum/difference of a and b</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.GenericGF.Exp(System.Int32)">
+            <summary>
+            Exps the specified a.
+            </summary>
+            <returns>2 to the power of a in GF(size)</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.GenericGF.Log(System.Int32)">
+            <summary>
+            Logs the specified a.
+            </summary>
+            <param name="a">A.</param>
+            <returns>base 2 log of a in GF(size)</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.GenericGF.Inverse(System.Int32)">
+            <summary>
+            Inverses the specified a.
+            </summary>
+            <returns>multiplicative inverse of a</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.GenericGF.Multiply(System.Int32,System.Int32)">
+            <summary>
+            Multiplies the specified a with b.
+            </summary>
+            <param name="a">A.</param>
+            <param name="b">The b.</param>
+            <returns>product of a and b in GF(size)</returns>
+        </member>
+        <member name="P:WpfAppProblemeInfo.GenericGF.Size">
+            <summary>
+            Gets the size.
+            </summary>
+        </member>
+        <member name="P:WpfAppProblemeInfo.GenericGF.GeneratorBase">
+            <summary>
+            Gets the generator base.
+            </summary>
+        </member>
+        <member name="M:WpfAppProblemeInfo.GenericGF.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:WpfAppProblemeInfo.GenericGFPoly">
+            <summary>
+            <p>Represents a polynomial whose coefficients are elements of a GF.
+            Instances of this class are immutable.</p>
+            <p>Much credit is due to William Rucklidge since portions of this code are an indirect
+            port of his C++ Reed-Solomon implementation.</p>
+            </summary>
+            <author>Sean Owen</author>
+        </member>
+        <member name="M:WpfAppProblemeInfo.GenericGFPoly.#ctor(WpfAppProblemeInfo.GenericGF,System.Int32[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:WpfAppProblemeInfo.GenericGFPoly"/> class.
+            </summary>
+            <param name="field">the {@link GenericGF} instance representing the field to use
+            to perform computations</param>
+            <param name="coefficients">coefficients as ints representing elements of GF(size), arranged
+            from most significant (highest-power term) coefficient to least significant</param>
+            <exception cref="T:System.ArgumentException">if argument is null or empty,
+            or if leading coefficient is 0 and this is not a
+            constant polynomial (that is, it is not the monomial "0")</exception>
+        </member>
+        <member name="P:WpfAppProblemeInfo.GenericGFPoly.Degree">
+            <summary>
+            degree of this polynomial
+            </summary>
+        </member>
+        <member name="P:WpfAppProblemeInfo.GenericGFPoly.IsZero">
+            <summary>
+            Gets a value indicating whether this <see cref="T:WpfAppProblemeInfo.GenericGFPoly"/> is zero.
+            </summary>
+            <value>true iff this polynomial is the monomial "0"</value>
+        </member>
+        <member name="M:WpfAppProblemeInfo.GenericGFPoly.GetCoefficient(System.Int32)">
+            <summary>
+            coefficient of x^degree term in this polynomial
+            </summary>
+            <param name="degree">The degree.</param>
+            <returns>coefficient of x^degree term in this polynomial</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.GenericGFPoly.EvaluateAt(System.Int32)">
+            <summary>
+            evaluation of this polynomial at a given point
+            </summary>
+            <param name="a">A.</param>
+            <returns>evaluation of this polynomial at a given point</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.Histogramme.#ctor(WpfAppProblemeInfo.Pixel[0:,0:])">
+            <summary>
+            Cree les différents histogrammes
+            </summary>
+            <param name="Image"></param>
+        </member>
+        <member name="M:WpfAppProblemeInfo.Histogramme.Max_value">
+            <summary>
+            Renvoie la valeur max entre les differents histo
+            </summary>
+            <returns>entier representant la valeur max</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Huffman.#ctor(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Huffman.Codage(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Huffman.Tri_insertion(System.Collections.Generic.List{WpfAppProblemeInfo.Symbole})" -->
+        <member name="T:WpfAppProblemeInfo.Innovation">
+            <summary>
+            Logique d'interaction pour Innovation.xaml
+            </summary>
+            <summary>
+            Innovation
+            </summary>
+        </member>
+        <member name="M:WpfAppProblemeInfo.Innovation.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:WpfAppProblemeInfo.JPEG.Compression">
+            <summary>
+            CLASS EN CONSTRUCTION NON ACTIVE SUR CE CODE 
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.#ctor(System.String)" -->
+        <member name="M:WpfAppProblemeInfo.MyImage.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Créer une fractale de MandelBrot
+            </summary>
+            <param Largeur="W"></param>
+            <param Hauteur="H"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.#ctor(System.String,System.Char)" -->
+        <member name="M:WpfAppProblemeInfo.MyImage.#ctor(WpfAppProblemeInfo.MyImage)">
+            <summary>
+            Créer un Histogramme
+            </summary>
+            <param Image ="traite"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.From_Image_To_File(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.Convertir_Endian_To_Int(System.Byte[])" -->
+        <member name="M:WpfAppProblemeInfo.MyImage.Convertir_Int_To_Endian(System.Int32,System.Int32)">
+            <summary>
+            Convertit un int en tableau de byte
+            </summary>
+            <param entier ="val"></param>
+            <returns>tableau de byte de taille nboctets</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.MyImage.To_String">
+            <summary>
+            Permet de lire sur la console les données d'une image.
+            </summary>
+            <returns>chaine de caracteres </returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.Color_To_Grey(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.Color_To_Black(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.Agrandir(System.Int32)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.Retrecir(System.Int32)" -->
+        <member name="M:WpfAppProblemeInfo.MyImage.Rotation(System.Double)">
+            <summary>
+            Effectue une rotation centrale de l'image
+            </summary>
+            <param name="angle"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.effet_miroir_H(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.Convolution(System.Int32,System.Int32[0:,0:])" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.detection_contour(System.Int32)" -->
+        <member name="M:WpfAppProblemeInfo.MyImage.renforcement_bords">
+            <summary>
+            filtre pour renforcer les bords
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.Flou(System.Int32)" -->
+        <member name="M:WpfAppProblemeInfo.MyImage.Repoussage">
+            <summary>
+            filtre pour le repoussage
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.dissimuler(WpfAppProblemeInfo.MyImage,System.String,System.Int32,System.Int32)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.decode_im(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.patternBG(WpfAppProblemeInfo.Pixel,WpfAppProblemeInfo.Pixel)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.patternHD(WpfAppProblemeInfo.Pixel,WpfAppProblemeInfo.Pixel)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.patternHG(WpfAppProblemeInfo.Pixel,WpfAppProblemeInfo.Pixel)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.separateur(WpfAppProblemeInfo.Pixel,WpfAppProblemeInfo.Pixel)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.alignement(WpfAppProblemeInfo.Pixel,WpfAppProblemeInfo.Pixel)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.timing_pattern(WpfAppProblemeInfo.Pixel,WpfAppProblemeInfo.Pixel)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.reserved_area(WpfAppProblemeInfo.Pixel,WpfAppProblemeInfo.Pixel,WpfAppProblemeInfo.QRcode)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.MyImage.placing_data(WpfAppProblemeInfo.Pixel,WpfAppProblemeInfo.Pixel,WpfAppProblemeInfo.QRcode)" -->
+        <member name="M:WpfAppProblemeInfo.Pixel.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Nouveau Pixel
+            </summary>
+            <param canalR="rouge"></param>
+            <param canalV="vert"></param>
+            <param canalB="bleu"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Pixel.#ctor(WpfAppProblemeInfo.Pixel)" -->
+        <member name="M:WpfAppProblemeInfo.Pixel.Moyenne">
+            <summary>
+            Calcul de la moyenne du pixel
+            </summary>
+            <returns>retourne la valeur moyenne entiere</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Pixel.equal(WpfAppProblemeInfo.Pixel)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Pixel.interpolation(System.Int32,System.Int32,System.Int32,WpfAppProblemeInfo.Pixel)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Pixel.filtrage(WpfAppProblemeInfo.Pixel[0:,0:],System.Int32[0:,0:],System.Int32,System.Int32)" -->
+        <member name="M:WpfAppProblemeInfo.Pixel.To_String">
+            <summary>
+            chaine sur les caracteristiques du pixel
+            </summary>
+            <returns>string</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.QRcode.#ctor(System.String,System.Char)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.QRcode.#ctor(WpfAppProblemeInfo.MyImage)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.QRcode.lecture_int_char(System.Int32)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.QRcode.lecture_char(System.Char)" -->
+        <member name="P:WpfAppProblemeInfo.QRcode.Mask">
+            <summary>
+            retourne le masque de type 0;
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.QRcode.NbBitQR(System.Int32,System.Char)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.QRcode.paire_caract(System.Char,System.Char)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.QRcode.AddToData(System.Boolean[],System.Collections.Generic.List{System.Boolean})" -->
+        <member name="M:WpfAppProblemeInfo.QRcode.correction_erreur">
+            <summary>
+            Realise la correction d'erreur ENCODE
+            </summary>
+        </member>
+        <member name="M:WpfAppProblemeInfo.QRcode.Pattern_Coin(WpfAppProblemeInfo.Pixel[0:,0:])">
+            <summary>
+            Analyse l'image pour savoir si les patterns sont présents
+            </summary>
+            <param Image="Image"></param>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.QRcode.Separator(WpfAppProblemeInfo.Pixel[0:,0:])">
+            <summary>
+            Analyse l'image pour savoir si les séparateurs sont présents
+            </summary>
+            <param Image ="Image"></param>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.QRcode.timing_pattern(WpfAppProblemeInfo.Pixel[0:,0:])">
+            <summary>
+            Analyse l'image pour savoir si les timing pattern sont présents
+            </summary>
+            <param Image="Image"></param>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.QRcode.alignement_check(WpfAppProblemeInfo.Pixel[0:,0:])">
+            <summary>
+            Verifie l'alignement pour les images supérieur à la version 1
+            </summary>
+            <param Image="Image"></param>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.QRcode.lecture_Data(WpfAppProblemeInfo.Pixel[0:,0:])">
+            <summary>
+            Lit les bits de données
+            </summary>
+            <param Image="Image"></param>
+            <returns>List de bits</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.QRcode.To_String">
+            <summary>
+            Retourne le code
+            </summary>
+            <returns>code lu</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.QRcode.lecture_mask(WpfAppProblemeInfo.Pixel[0:,0:])">
+            <summary>
+            Lit le masque
+            </summary>
+            <param Image="Image"></param>
+        </member>
+        <member name="T:WpfAppProblemeInfo.QrCodeWPF">
+            <summary>
+            Logique d'interaction pour QrCodeWPF.xaml
+            </summary>
+            <summary>
+            QrCodeWPF
+            </summary>
+        </member>
+        <member name="M:WpfAppProblemeInfo.QrCodeWPF.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:WpfAppProblemeInfo.ReedSolomonAlgorithm.Encode(System.Byte[],System.Int32,WpfAppProblemeInfo.ErrorCorrectionCodeType)">
+            <summary>
+            Produces error correction codewords for a message using the Reed-Solomon algorithm.
+            </summary>
+            <param name="message">The message to compute the error correction codewords.</param>
+            <param name="eccCount">The number of error correction codewords desired.</param>
+            <param name="eccType">The type of Galois field to use to encode error correction codewords.</param>
+            <returns>Returns the computed error correction codewords.</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.ReedSolomonAlgorithm.Encode(System.Byte[],System.Int32)">
+            <summary>
+            Produces error correction codewords for a message using the Reed-Solomon algorithm.
+            </summary>
+            <param name="message">The message to compute the error correction codewords.</param>
+            <param name="eccCount">The number of error correction codewords desired.</param>
+            <returns>Returns the computed error correction codewords.</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.ReedSolomonAlgorithm.Decode(System.Byte[],System.Byte[],WpfAppProblemeInfo.ErrorCorrectionCodeType)">
+            <summary>
+            Repairs a possibly broken message using the Reed-Solomon algorithm.
+            </summary>
+            <param name="message">The possibly broken message to repair.</param>
+            <param name="ecc">The available error correction codewords.</param>
+            <param name="eccType">The type of Galois field to use to decode message.</param>
+            <returns>Returns the repaired message, or null if it cannot be repaired.</returns>
+        </member>
+        <member name="M:WpfAppProblemeInfo.ReedSolomonAlgorithm.Decode(System.Byte[],System.Byte[])">
+            <summary>
+            Repairs a possibly broken message using the Reed-Solomon algorithm.
+            </summary>
+            <param name="message">The possibly broken message to repair.</param>
+            <param name="ecc">The available error correction codewords.</param>
+            <returns>Returns the repaired message, or null if it cannot be repaired.</returns>
+        </member>
+        <member name="T:WpfAppProblemeInfo.ReedSolomonDecoder">
+            <summary> <p>Implements Reed-Solomon decoding, as the name implies.</p>
+            
+            <p>The algorithm will not be explained here, but the following references were helpful
+            in creating this implementation:</p>
+            
+            <ul>
+            <li>Bruce Maggs.
+            <a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/project/pscico-guyb/realworld/www/rs_decode.ps">
+            "Decoding Reed-Solomon Codes"</a> (see discussion of Forney's Formula)</li>
+            <li>J.I. Hall. <a href="www.mth.msu.edu/~jhall/classes/codenotes/GRS.pdf">
+            "Chapter 5. Generalized Reed-Solomon Codes"</a>
+            (see discussion of Euclidean algorithm)</li>
+            </ul>
+            
+            <p>Much credit is due to William Rucklidge since portions of this code are an indirect
+            port of his C++ Reed-Solomon implementation.</p>
+            
+            </summary>
+            <author>Sean Owen</author>
+            <author>William Rucklidge</author>
+            <author>sanfordsquires</author>
+        </member>
+        <member name="M:WpfAppProblemeInfo.ReedSolomonDecoder.Decode(System.Int32[],System.Int32)">
+            <summary>
+              <p>Decodes given set of received codewords, which include both data and error-correction
+            codewords. Really, this means it uses Reed-Solomon to detect and correct errors, in-place,
+            in the input.</p>
+            </summary>
+            <param name="received">data and error-correction codewords</param>
+            <param name="twoS">number of error-correction codewords available</param>
+            <returns>false: decoding fails</returns>
+        </member>
+        <member name="T:WpfAppProblemeInfo.ReedSolomonEncoder">
+            <summary>
+            Implements Reed-Solomon encoding, as the name implies.
+            </summary>
+            <author>Sean Owen</author>
+            <author>William Rucklidge</author>
+        </member>
+        <member name="M:WpfAppProblemeInfo.Symbole.#ctor(System.Char)">
+            <summary>
+            Constructeur créant un symbole
+            </summary>
+            <param caractere="lu"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Symbole.#ctor(WpfAppProblemeInfo.Symbole)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Symbole.Branche(System.Char,System.Collections.Generic.List{System.Boolean})" -->
+        <member name="T:WpfAppProblemeInfo.Tools">
+            <summary>
+            La Classe tools me permet d'avoir accès à une banque d'opérations qui seront utilisé dans plusieus classe car très général,
+            notamment entre la classe QR code et MyImage comme la puisssance ou encore des conversions bool en byte et en int. Elle est aussi utile car accessible 
+            dans l'éventualité de créer de nouvelles classes pour réaliser de nouvelles fonctions
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Tools.Bool_to_Int(System.Boolean[],System.Int32)" -->
+        <member name="M:WpfAppProblemeInfo.Tools.puissance(System.Int32,System.Int32)">
+            <summary>
+            Effectue l'opération puissance
+            </summary>
+            <param exposant="exposant"></param>
+            <param base="bas"></param>
+            <returns>bas puissance exposant</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Tools.int_to_bit(System.Int32,System.Int32)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Tools.GetBit_byte(System.Byte,System.Int32)" -->
+        <!-- Badly formed XML comment ignored for member "M:WpfAppProblemeInfo.Tools.BinaryPow(System.Int32)" -->
+        <member name="T:WpfAppProblemeInfo.App">
+            <summary>
+            Logique d'interaction pour App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:WpfAppProblemeInfo.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:WpfAppProblemeInfo.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:WpfAppProblemeInfo.MainWindow">
+            <summary>
+            Logique d'interaction pour MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:WpfAppProblemeInfo.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:WpfAppProblemeInfo.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:WpfAppProblemeInfo.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:WpfAppProblemeInfo.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,6 @@
+Facture Commande N° 114:
+10 unitaire   x10 1 napolitaine 100 Euros
+11 unitaire   x1 1 3 fromages 11 Euros
+12 unitaire   x7 1 norvegienne 84 Euros
+13 unitaire   x2 1 caprese 26 Euros
+Prix Total:221

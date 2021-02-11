@@ -1,0 +1,8 @@
+Facture Commande N° 114:
+10 unitaire   x7 1 napolitaine 70 Euros
+2 unitaire   x1 33 Fanta 2 Euros
+2 unitaire   x2 33 Coca-Cola 4 Euros
+11 unitaire   x5 2 napolitaine 55 Euros
+19,5 unitaire   x5 3 caprese 97,5 Euros
+13 unitaire   x2 1 caprese 26 Euros
+Prix Total:216,5

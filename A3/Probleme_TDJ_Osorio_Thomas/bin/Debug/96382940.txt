@@ -1,0 +1,7 @@
+Facture Commande N° 114:
+10 unitaire   x4 1 marguerita 40 Euros
+10 unitaire   x2 1 napolitaine 20 Euros
+11 unitaire   x12 1 4 fromages 132 Euros
+12 unitaire   x5 1 norvegienne 60 Euros
+14 unitaire   x23 1 sp�ciale 322 Euros
+Prix Total:574

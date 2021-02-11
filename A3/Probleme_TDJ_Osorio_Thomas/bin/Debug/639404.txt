@@ -1,0 +1,6 @@
+Facture Commande N° 114:
+18 unitaire   x6 3 br�silienne 108 Euros
+19,5 unitaire   x15 3 caprese 292,5 Euros
+15 unitaire   x25 3 napolitaine 375 Euros
+16,5 unitaire   x1 3 4 fromages 16,5 Euros
+Prix Total:792
